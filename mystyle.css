@@ -3,5 +3,5 @@ h1 {color: blue; } /* This sets the text color of all <h1> headings to blue */
 <p style="color:purple;">Go back to the <a href="Documents/MovieReviews.html">Movie Review Page</a></p> /* This sets the text color to purple*/
 
 body {
-  background-color: lightblue; /* makes the background of the page light blue */
+  background-color: lightblue; 
 }
