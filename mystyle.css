@@ -1,7 +1,4 @@
 h1 {color: blue; } /* This sets the text color of all <h1> headings to blue */
 
-p {
-    font-size: 16px; /* Sets the font size for paragraphs */
-    color: gray; /* Dark gray text color for readability */
-}
+<p style="color:purple;">Go back to the <a href="Documents/MovieReviews.html">Movie Review Page</a></p> /* This sets the text color to purple*/
 
