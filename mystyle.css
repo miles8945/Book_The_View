@@ -1,0 +1,8 @@
+/* Global body styles */
+body {
+    background-color: #e6f7ff; /* Light blue background */
+    font-family: Arial, Helvetica, sans-serif; /* Clean font style */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+}
