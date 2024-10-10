@@ -2,9 +2,6 @@ h1 {color: blue; } /* This sets the text color of all <h1> headings to blue */
 
 <p style="color:purple;">Go back to the <a href="Documents/MovieReviews.html">Movie Review Page</a></p> /* This sets the text color to purple*/
 
-.section-box {
-    border: 2px solid #0059b3; /* Blue border */
-    padding: 20px; /* Internal padding */
-    margin: 20px auto; /* Center margin */
-    width: 80%; /* Box width */
-    background-color: #e6f2ff; /* Light blue background for the box */
+header {
+    font-family: 'Times New Roman', Times, serif;
+}
