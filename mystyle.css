@@ -5,3 +5,7 @@ h1 {color: blue; } /* This sets the text color of all <h1> headings to blue */
 header {
     font-family: 'Times New Roman', Times, serif;
 }
+
+body {
+    background-color: lightblue;
+}
