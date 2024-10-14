@@ -1,11 +1,49 @@
-h1 {color: blue; } /* This sets the text color of all <h1> headings to blue */
-
-<p style="color:purple;">Go back to the <a href="Documents/MovieReviews.html">Movie Review Page</a></p> /* This sets the text color to purple*/
-
-header {
-    font-family: 'Times New Roman', Times, serif;
+/* Styling for the <h1> tag */
+h1 {
+    color: blue; /* Text color of all <h1> elements set to blue */
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
 }
 
+/* Inline paragraph text with class applied */
+.important-text {
+    color: purple; /* Paragraph text color set to purple */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Styling links within paragraphs */
+.important-text a {
+    color: darkred; /* Sets link color to dark red */
+    text-decoration: none;
+}
+
+.important-text a:hover {
+    text-decoration: underline; /* Underline links when hovered */
+}
+
+/* Header styling */
+header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #4a6fa5;
+    padding: 20px;
+    border-bottom: 2px solid navy;
+}
+
+/* Body styling */
 body {
-    background-color: lightblue;
+    background-color: lightblue; /* Sets the page background color to light blue */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif;
+}
+
+/* Footer styling */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 2px solid gray;
 }
