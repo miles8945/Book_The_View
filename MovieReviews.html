@@ -28,28 +28,39 @@
             <h3>Inside Out 2</h3>
             <p>"Watch it with my kids they absolutely loved it."</p>
 
-            <h3>Please Write your Review:</h3>
+            <h3>Please Write Your Review:</h3>
 
-            <form action="submit_review.php" method="post">
-                <label for="movie-name">Movie Name:</label>
-                <input type="text" id="movie-name" name="movie-name" required>
+            <!-- Form starts here -->
+            <form id="review-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="movie-name">Movie Name:</label>
+                    <input type="text" id="movie-name" name="movie-name" required>
+                </div>
 
-                <label for="review">Your Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
+                <div class="form-group">
+                    <label for="review">Your Review:</label>
+                    <textarea id="review" name="review" rows="4" required></textarea>
+                </div>
 
-                <label for="rating">Rating (1-5):</label>
-                <select id="rating" name="rating">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+                <div class="form-group">
+                    <label for="rating">Rating (1-5):</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
 
                 <button type="submit">Submit Review</button>
             </form>
         </article>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
