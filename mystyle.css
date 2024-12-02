@@ -31,11 +31,35 @@ header {
     border-bottom: 2px solid navy; /* Adds a navy border under the header */
 }
 
+/* Navigation links styling */
+header nav ul {
+    list-style-type: none; /* Removes bullets from navigation list */
+    margin: 0; /* Removes margin around the nav list */
+    padding: 0; /* Removes padding around the nav list */
+    display: flex; /* Displays the items in a row */
+    justify-content: center; /* Centers the nav items */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Adds space between navigation items */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Removes underline from navigation links */
+    color: white; /* Sets the link text color to white */
+    font-weight: bold; /* Makes the text bold */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Underlines the link on hover */
+}
+
 /* Body styling */
 body {
     background-color: lightblue; /* Sets the page background color to light blue */
     margin: 0; /* Removes default margin */
     font-family: Arial, sans-serif; /* Applies Arial or sans-serif as the font */
+    line-height: 1.6; /* Sets a standard line height for better readability */
 }
 
 /* Footer styling */
@@ -46,4 +70,47 @@ body {
     padding: 10px; /* Adds padding inside the footer for space */
     margin-top: 20px; /* Adds space above the footer to separate it from content */
     border-top: 2px solid gray; /* Adds a gray border on top of the footer */
+}
+
+/* Form styling */
+form {
+    background-color: white; /* Sets the form background color to white */
+    padding: 20px; /* Adds padding inside the form for space */
+    margin: 20px auto; /* Centers the form with equal space on left and right */
+    max-width: 400px; /* Limits the form width */
+    border-radius: 8px; /* Adds rounded corners to the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
+}
+
+/* Input and textarea styling */
+input, textarea, select {
+    width: 100%; /* Makes inputs take the full width of the container */
+    padding: 10px; /* Adds padding for a better visual structure */
+    margin-bottom: 10px; /* Adds space between inputs */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 5px; /* Adds rounded corners */
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Sets button color to blue */
+    color: white; /* Sets button text color to white */
+    border: none; /* Removes the border */
+    padding: 10px 15px; /* Adds padding inside the button */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darkens the button color on hover */
+}
+
+/* Article styling */
+article {
+    background-color: white; /* Sets the background color to white */
+    padding: 15px; /* Adds padding around the article */
+    margin: 20px auto; /* Centers the article section */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
 }
