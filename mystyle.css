@@ -1,116 +1,130 @@
-/* Styling for the <h1> tag */
-h1 {
-    color: blue; /* Text color of all <h1> elements set to blue */
-    font-size: 2em; /* Increases the font size of <h1> */
-    margin: 0; /* Removes margin to align it to header */
-    text-align: center; /* Centers the text within the header */
+/* Global Styling */
+body {
+    background-color: #f0f8ff; /* Sets a soft light blue background for the page */
+    margin: 0; /* Removes default margins */
+    font-family: Arial, sans-serif; /* Uses a clean and modern sans-serif font */
+    line-height: 1.6; /* Enhances readability with consistent line spacing */
 }
 
-/* Inline paragraph text with class */
-.important-text {
-    color: purple; /* Paragraph text color set to purple */
-    font-size: 1.2em; /* Makes the font a little larger than the body text */
-    margin: 10px 0; /* Adds space above and below the paragraph */
-}
-
-/* Styling links within paragraphs */
-.important-text a {
-    color: darkred; /* Sets link color to dark red */
-    text-decoration: none; /* Removes the underline from links */
-}
-
-.important-text a:hover {
-    text-decoration: underline; /* Underline links when hovered */
-}
-
-/* Header styling */
+/* Header Styling */
 header {
-    font-family: 'Times New Roman', Times, serif; /* Uses a serif font */
-    background-color: #4a6fa5; /* Sets a navy-ish blue background color for the header */
-    padding: 20px; /* Adds space between the header content and its edges */
-    border-bottom: 2px solid navy; /* Adds a navy border under the header */
+    font-family: 'Times New Roman', Times, serif; /* Sets a classic serif font for the header */
+    background-color: #4a6fa5; /* Navy-ish blue background */
+    padding: 20px; /* Adds spacing inside the header */
+    border-bottom: 2px solid navy; /* Adds a border below the header */
 }
 
-/* Navigation links styling */
+header h1 {
+    color: white; /* White text color for better contrast */
+    font-size: 2.5em; /* Makes the header title prominent */
+    margin: 0; /* Removes extra space */
+    text-align: center; /* Centers the title */
+}
+
+header h1 img {
+    vertical-align: middle; /* Aligns the logo vertically with the text */
+}
+
+/* Navigation Menu Styling */
 header nav ul {
-    list-style-type: none; /* Removes bullets from navigation list */
-    margin: 0; /* Removes margin around the nav list */
-    padding: 0; /* Removes padding around the nav list */
-    display: flex; /* Displays the items in a row */
-    justify-content: center; /* Centers the nav items */
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns items in a row */
+    justify-content: center; /* Centers the navigation items */
 }
 
 header nav ul li {
-    margin: 0 15px; /* Adds space between navigation items */
+    margin: 0 15px; /* Adds space between navigation links */
 }
 
 header nav ul li a {
-    text-decoration: none; /* Removes underline from navigation links */
-    color: white; /* Sets the link text color to white */
-    font-weight: bold; /* Makes the text bold */
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets link color to white */
+    font-weight: bold; /* Highlights the links with bold font */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 header nav ul li a:hover {
-    text-decoration: underline; /* Underlines the link on hover */
+    color: #ffcc00; /* Changes link color to yellow on hover */
 }
 
-/* Body styling */
-body {
-    background-color: lightblue; /* Sets the page background color to light blue */
-    margin: 0; /* Removes default margin */
-    font-family: Arial, sans-serif; /* Applies Arial or sans-serif as the font */
-    line-height: 1.6; /* Sets a standard line height for better readability */
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text for contrast */
+    text-align: center; /* Centers the text */
+    padding: 15px; /* Adds spacing inside the footer */
+    margin-top: 20px; /* Separates footer from content */
+    border-top: 2px solid gray; /* Adds a border above the footer */
 }
 
-/* Footer styling */
-#footer {
-    background-color: #333; /* Applies a dark gray background to the footer */
-    color: white; /* Changes the text color to white */
-    text-align: center; /* Centers the text inside the footer */
-    padding: 10px; /* Adds padding inside the footer for space */
-    margin-top: 20px; /* Adds space above the footer to separate it from content */
-    border-top: 2px solid gray; /* Adds a gray border on top of the footer */
+/* Article Styling */
+article {
+    background-color: #ffffff; /* White background for content */
+    padding: 20px; /* Adds spacing inside articles */
+    margin: 20px auto; /* Centers the article with equal side margins */
+    max-width: 800px; /* Limits the width for better readability */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
-/* Form styling */
+/* Paragraph Styling */
+.important-text {
+    color: #6a1b9a; /* Purple text color */
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 10px 0; /* Adds spacing above and below */
+}
+
+.important-text a {
+    color: #c62828; /* Dark red links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Emphasizes the link */
+    transition: text-decoration 0.3s; /* Smooth hover effect */
+}
+
+.important-text a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Form Styling */
 form {
-    background-color: white; /* Sets the form background color to white */
-    padding: 20px; /* Adds padding inside the form for space */
-    margin: 20px auto; /* Centers the form with equal space on left and right */
-    max-width: 400px; /* Limits the form width */
-    border-radius: 8px; /* Adds rounded corners to the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Adds padding for spacing */
+    margin: 20px auto; /* Centers the form on the page */
+    max-width: 400px; /* Restricts width */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
 }
 
-/* Input and textarea styling */
 input, textarea, select {
-    width: 100%; /* Makes inputs take the full width of the container */
-    padding: 10px; /* Adds padding for a better visual structure */
-    margin-bottom: 10px; /* Adds space between inputs */
-    border: 1px solid #ccc; /* Adds a light gray border */
-    border-radius: 5px; /* Adds rounded corners */
-    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+    width: 100%; /* Full-width elements */
+    padding: 12px; /* Adds spacing inside */
+    margin-bottom: 15px; /* Separates elements vertically */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
-/* Button styling */
+/* Button Styling */
 button {
-    background-color: #007bff; /* Sets button color to blue */
-    color: white; /* Sets button text color to white */
-    border: none; /* Removes the border */
-    padding: 10px 15px; /* Adds padding inside the button */
-    border-radius: 5px; /* Adds rounded corners */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    background-color: #007bff; /* Bright blue background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    padding: 12px 20px; /* Adds inner spacing */
+    border-radius: 5px; /* Rounds corners */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth hover effect */
 }
 
 button:hover {
-    background-color: #0056b3; /* Darkens the button color on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Article styling */
-article {
-    background-color: white; /* Sets the background color to white */
-    padding: 15px; /* Adds padding around the article */
-    margin: 20px auto; /* Centers the article section */
-    border-radius: 8px; /* Adds rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+/* Utility Styling */
+img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
 }
