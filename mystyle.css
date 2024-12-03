@@ -1,109 +1,115 @@
 /* Global Styling */
 body {
-    background-color: #f0f8ff; /* Sets a soft light blue background for the page */
+    background-color: #f0f8ff; /* Soft light blue background */
     margin: 0; /* Removes default margins */
-    font-family: Arial, sans-serif; /* Uses a clean and modern sans-serif font */
-    line-height: 1.6; /* Enhances readability with consistent line spacing */
+    font-family: Arial, sans-serif; /* Modern sans-serif font */
+    line-height: 1.6; /* Consistent spacing for better readability */
 }
 
 /* Header Styling */
 header {
-    font-family: 'Times New Roman', Times, serif; /* Sets a classic serif font for the header */
-    background-color: #4a6fa5; /* Navy-ish blue background */
-    padding: 20px; /* Adds spacing inside the header */
-    border-bottom: 2px solid navy; /* Adds a border below the header */
+    font-family: 'Times New Roman', Times, serif; /* Classic serif font */
+    background-color: #4a6fa5; /* Navy-blue background */
+    padding: 20px; /* Inner spacing */
+    border-bottom: 2px solid navy; /* Border below header */
 }
 
 header h1 {
-    color: white; /* White text color for better contrast */
-    font-size: 2.5em; /* Makes the header title prominent */
-    margin: 0; /* Removes extra space */
+    color: white; /* White text for contrast */
+    font-size: 2.5em; /* Prominent header title */
+    margin: 0; /* Removes extra spacing */
     text-align: center; /* Centers the title */
 }
 
 header h1 img {
-    vertical-align: middle; /* Aligns the logo vertically with the text */
+    vertical-align: middle; /* Aligns logo with text */
+}
+
+/* Image Centering (for specific images like InsideOut2.jpeg) */
+#center-image {
+    display: block; /* Treats image as block-level */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
 /* Navigation Menu Styling */
 header nav ul {
-    list-style-type: none; /* Removes bullet points */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    display: flex; /* Aligns items in a row */
+    list-style-type: none; /* Removes bullets */
+    margin: 0; /* Removes margin */
+    padding: 0; /* Removes padding */
+    display: flex; /* Displays navigation links in a row */
     justify-content: center; /* Centers the navigation items */
 }
 
 header nav ul li {
-    margin: 0 15px; /* Adds space between navigation links */
+    margin: 0 15px; /* Spacing between links */
 }
 
 header nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: white; /* Sets link color to white */
-    font-weight: bold; /* Highlights the links with bold font */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    text-decoration: none; /* Removes underline */
+    color: white; /* White link text */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 header nav ul li a:hover {
-    color: #ffcc00; /* Changes link color to yellow on hover */
+    color: #ffcc00; /* Yellow hover effect */
 }
 
 /* Footer Styling */
 footer {
     background-color: #333; /* Dark gray background */
     color: white; /* White text for contrast */
-    text-align: center; /* Centers the text */
-    padding: 15px; /* Adds spacing inside the footer */
-    margin-top: 20px; /* Separates footer from content */
-    border-top: 2px solid gray; /* Adds a border above the footer */
+    text-align: center; /* Centered footer text */
+    padding: 15px; /* Inner spacing */
+    margin-top: 20px; /* Space above footer */
+    border-top: 2px solid gray; /* Border above footer */
 }
 
 /* Article Styling */
 article {
     background-color: #ffffff; /* White background for content */
-    padding: 20px; /* Adds spacing inside articles */
-    margin: 20px auto; /* Centers the article with equal side margins */
-    max-width: 800px; /* Limits the width for better readability */
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    padding: 20px; /* Inner spacing */
+    margin: 20px auto; /* Center content with spacing */
+    max-width: 800px; /* Restrict width for readability */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* Paragraph Styling */
 .important-text {
     color: #6a1b9a; /* Purple text color */
     font-size: 1.2em; /* Slightly larger font size */
-    margin: 10px 0; /* Adds spacing above and below */
+    margin: 10px 0; /* Vertical spacing */
 }
 
 .important-text a {
-    color: #c62828; /* Dark red links */
+    color: #c62828; /* Dark red link color */
     text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Emphasizes the link */
-    transition: text-decoration 0.3s; /* Smooth hover effect */
+    font-weight: bold; /* Bold links */
+    transition: text-decoration 0.3s ease; /* Smooth hover effect */
 }
 
 .important-text a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    text-decoration: underline; /* Underline links on hover */
 }
 
 /* Form Styling */
 form {
-    background-color: #ffffff; /* White background */
-    padding: 20px; /* Adds padding for spacing */
-    margin: 20px auto; /* Centers the form on the page */
-    max-width: 400px; /* Restricts width */
-    border-radius: 10px; /* Rounds the corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Inner spacing */
+    margin: 20px auto; /* Center the form */
+    max-width: 400px; /* Limit form width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 input, textarea, select {
     width: 100%; /* Full-width elements */
-    padding: 12px; /* Adds spacing inside */
-    margin-bottom: 15px; /* Separates elements vertically */
-    border: 1px solid #ddd; /* Light border */
+    padding: 12px; /* Inner spacing */
+    margin-bottom: 15px; /* Spacing between fields */
+    border: 1px solid #ddd; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Includes padding in the width calculation */
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 /* Button Styling */
@@ -111,10 +117,10 @@ button {
     background-color: #007bff; /* Bright blue background */
     color: white; /* White text */
     border: none; /* Removes border */
-    padding: 12px 20px; /* Adds inner spacing */
-    border-radius: 5px; /* Rounds corners */
+    padding: 12px 20px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor for interactivity */
-    transition: background-color 0.3s; /* Smooth hover effect */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 button:hover {
@@ -123,8 +129,6 @@ button:hover {
 
 /* Utility Styling */
 img {
-    max-width: 100%; /* Makes images responsive */
-    height: auto; /* Maintains aspect ratio */
-}
-
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
 }
